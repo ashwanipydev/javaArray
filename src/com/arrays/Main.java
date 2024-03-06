@@ -1,5 +1,7 @@
 package com.arrays;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         // syntax
@@ -20,6 +22,14 @@ public class Main {
         String[] arr = new String[2];
         arr[0] = "ankit";
         arr[1] = "one";
-        System.out.println(arr[0]);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(marks));
+
+        String[] str = new String[4];
+        str[0] = "ank1it";
+        str[1] = "ank2it";
+        str[2] = "ank3it";
+        str[3] = "ank4it";
+        System.out.println(Arrays.toString(str));
     }
 }
