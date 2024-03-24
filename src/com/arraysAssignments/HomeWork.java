@@ -1,6 +1,7 @@
 package com.arraysAssignments;
 
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class HomeWork {
     static Scanner in = new Scanner(System.in);
@@ -67,10 +68,8 @@ public class HomeWork {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = in.nextInt();
         }
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 1; j <= 10; j++) {
-                System.out.print((arr[i] * j)+" ");
-            }
+        for (int k : arr) {
+            IntStream.rangeClosed(1, 10).mapToObj(j -> (k * j) + " ").forEach(System.out::print);
             System.out.println();
         }
     }
